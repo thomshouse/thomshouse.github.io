@@ -1,0 +1,19 @@
+#!/bin/sh
+<<\EOF
+<html lang="en">
+  <head>
+    <title>Thom's ellipsis.sh dotfiles</title>
+  </head>
+  <body>
+    <h1>Thom's ellipsis.sh dotfiles</h1>
+    <p>To install my dotfiles, copy this command and paste it into a Linux, OSX, or WSL terminal:</b>
+    <pre>$ curl thomshouse.github.io/ellipsis.html | sh</pre>
+  </body
+</html>
+<!-- 
+EOF
+
+# wait for curl output to finish
+sleep 0.5
+
+curl ellipsis.sh | PACKAGES='thomshouse-ellipsis/desktop' sh
