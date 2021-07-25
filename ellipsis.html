@@ -13,7 +13,12 @@
 <!-- 
 EOF
 
-# wait for curl output to finish
+# Wait for cURL output to finish
 sleep 0.5
 
-curl -sL https://raw.githubusercontent.com/thomshouse-ellipsis/dot-desktop/master/install.sh | sh
+# Download bootstrap installer and execute with bash
+curl -sL https://raw.githubusercontent.com/thomshouse-ellipsis/dot-desktop/master/install.bash > bootstrap-$$.bash
+bash bootstrap-$$.bash
+
+# Remove bootstrap installer
+rm bootstrap-$$.bash
